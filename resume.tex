@@ -1,0 +1,106 @@
+% TEX program = xelatex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Important note:
+% This template must be compiled with XeLaTeX, the below lines will ensure this
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt, a4paper]{resume}
+
+% Configure page margins with geometry
+\setlength{\sidemargin}{1.5cm}
+\geometry{left=\sidemargin, top=1.5cm, right=\sidemargin, bottom=2cm, footskip=.5cm}
+
+\fontdir[fonts/] % Specify the location of the included fonts
+
+% Color for highlights
+\definecolor{awesome}{HTML}{18678d}
+
+% Colors for text - uncomment and modify
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+\renewcommand{\headerSep}{\quad\textbar\quad} % If you would like to change the social information separator from a pipe (|) to something else
+
+%----------------------------------------------------------------------------------------
+%          Header Information
+%----------------------------------------------------------------------------------------
+
+\name{Matthew}{Kavanagh}
+\address{Syracuse, NY}
+\mobile{+1 (315) 882-7046}
+
+\email{matthewfkavanagh@icloud.com}
+\github{mkavanagh-23}
+\linkedin{mk-radio}
+
+\position{Broadcaster{\enskip\cdotp\enskip}IT Student}
+
+\makecvfooter{\today}{Matthew Kavanagh~~~·~~~Resume}{\thepage} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvheader % Print the header
+
+\begin{cvsummary}
+    Public radio broadcaster and IT student graduating in December 2024. Strong self-learner and homelab hobbyist with years of experience using linux and cloud-based webservers, currently preparing for the CCNA 200-301 certification. Self-motivated and willing to relocate. Seeking an entry level role in computer networking with an eagerness to learn and grow.
+\end{cvsummary}
+
+%\begin{center}
+    %%\hline{\linewidth}
+%\end{center}
+
+%----------------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%----------------------------------------------------------------------------------------
+
+\setlength{\headersmargin}{-0.2cm}
+\setlength{\leftcolumnwidth}{5cm}
+\setlength{\columnsmargin}{0.5\sidemargin}
+\setlength{\timelinemargin}{0.5cm}
+
+\timeline{D} % draw the timeline starting from section B
+
+\begin{textblock*}{\leftcolumnwidth}(0pt, \headersmargin)
+    \vspace{-2mm}
+    \input{sections/contact.tex}
+    \vspace{3mm}
+    \input{sections/skills.tex}
+    \vspace{3.5mm}
+    \input{sections/hobbies.tex}
+\end{textblock*}
+
+\begin{textblock*}
+    {\paperwidth - 2\sidemargin - \leftcolumnwidth - \columnsmargin - 2\timelinemargin}
+    (\leftcolumnwidth + \columnsmargin + 2\timelinemargin, \headersmargin)
+    \vspace{-2mm}
+    \input{sections/experience.tex}
+    \input{sections/education.tex}
+\end{textblock*}
+
+%----------------------------------------------------------------------------------------
+% Debug - Show lengths used in the document
+%\newcommand{\pos}[2]{([xshift=#1,yshift=-#2]current page.north west)}
+%\begin{tikzpicture}[
+    %remember picture,
+    %overlay,
+    %arrow/.style={stealth-stealth},
+%]
+    %\draw[arrow, thick] \pos{0pt}{6cm} -- \pos{\sidemargin}{6cm};
+    %\draw[arrow, thick] \pos{\leftcolumnwidth + \sidemargin}{6cm} -- \pos{\leftcolumnwidth + \sidemargin + \sidemargin}{6cm};
+    %\draw[arrow, thick] \pos{\leftcolumnwidth + \sidemargin}{6cm} -- \pos{\leftcolumnwidth + \sidemargin + \sidemargin}{6cm};
+%\end{tikzpicture}
+
+
+\end{document}
