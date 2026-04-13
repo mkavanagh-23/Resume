@@ -1,5 +1,5 @@
 ## To Build 
-`make {all | resume.pdf | coverletter.pdf}`
+`make {all | resume | coverletter}`
 
 
 ## To clean

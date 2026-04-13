@@ -1,9 +1,13 @@
-.PHONY: all clean
+.PHONY: all resume coverletter clean
 
 OUTDIR = build
 PDFDIR = pdf
 
-all: ${PDFDIR}/resume.pdf ${PDFDIR}/coverletter.pdf
+all: resume coverletter
+
+resume: ${PDFDIR}/resume.pdf 
+
+coverletter: ${PDFDIR}/coverletter.pdf
 
 ${PDFDIR}/%.pdf: %.tex
 	mkdir -p $(OUTDIR) $(PDFDIR)
