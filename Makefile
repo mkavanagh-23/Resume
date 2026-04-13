@@ -31,6 +31,8 @@ all: cv
 
 cv: resume.tex
 	latexmk -quiet -lualatex -jobname=resume -use-make resume.tex
+	latexmk -quiet -lualatex -jobname=coverletter -use-make coverletter.tex
+#	xelatex coverletter.tex
 
 clean:
 	latexmk -CA

@@ -1,7 +1,8 @@
 build/
 output/
-resume.aux
-resume.fdb_latexmk
-resume.fls
-resume.log
-resume.out
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.pdf
