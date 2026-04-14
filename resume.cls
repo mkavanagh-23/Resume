@@ -405,7 +405,7 @@
 \def\cmobile{\headersocialstyle{\@mobile}}
 % Homepage
 \def\chomepageicon{\headersocialstyle{\href{\@homepage}{\faGlobe}}}
-\def\chomepage{\headersocialstyle{\href{\@homepage}{\@homepage}}}
+\def\chomepage{\headersocialstyle{\href{https://\@homepage}{\@homepage}}}
 % Github
 \def\cgiticon{\headersocialstyle{\href{https://github.com/\@github}{\faGithubSquare}}}
 \def\cgituser{\headersocialstyle{\href{https://github.com/\@github}{\@github}}}
